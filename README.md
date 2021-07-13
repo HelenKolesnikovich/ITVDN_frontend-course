@@ -7,5 +7,5 @@
 ### This project has a '7-in-1' architecture: all of the project's style files are included in main.css. 
 ### Also I used normalized.css to normalize CSS styles across different browsers.
 
-### Project link: https://helenkolesnikovich.github.io/ITVDN_frontend-course/index.html
+### Project link: https://helenkolesnikovich.github.io/ITVDN_frontend-course/grid-project/index.html
 ### Done: 13.07.2021
