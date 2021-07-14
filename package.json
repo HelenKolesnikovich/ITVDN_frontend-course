@@ -1,0 +1,25 @@
+{
+  "name": "itvdn_frontend-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelenKolesnikovich/ITVDN_frontend-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HelenKolesnikovich/ITVDN_frontend-course/issues"
+  },
+  "homepage": "https://github.com/HelenKolesnikovich/ITVDN_frontend-course#readme",
+  "dependencies": {
+    "touch": "^3.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
