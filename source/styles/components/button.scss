@@ -17,6 +17,7 @@
 
   &--yellow {
     background-color: $color-yellow;
+    text-transform: uppercase;
 
     &:hover {
       background-color: lighten($color-yellow, $rate-lighten);

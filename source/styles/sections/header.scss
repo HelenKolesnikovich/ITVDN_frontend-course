@@ -1,7 +1,7 @@
 .header {
   &__top {
-      background-color: $gray--light;
-      border-bottom: 1px solid $gray;
+      background-color: $bg--light-gray;
+      border-bottom: 1px solid $bg--gray;
   }
 
   &__bottom {
@@ -31,7 +31,7 @@
   &:first-child {
     margin-right: 8px;
     padding-right: 18px;
-    border-right: 1px solid $gray;
+    border-right: 1px solid $bg--gray;
   }
 
   &__icon {

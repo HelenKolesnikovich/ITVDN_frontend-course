@@ -1,0 +1,32 @@
+.hero {
+  min-height: 59px;
+  padding: 174px 0;
+  text-align: center;
+  color: $color-white;
+  background-color: $bg--gray;
+  background-image: url(../../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__about {
+    font-family: $ff-main-bold;
+    font-size: 3rem;
+    text-transform: capitalize;
+    line-height: 1;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 28px;
+    font-family: $ff-main-light;
+  }
+
+  .btn {
+    padding: 21px 41px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+}

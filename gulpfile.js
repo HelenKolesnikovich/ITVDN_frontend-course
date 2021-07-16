@@ -32,7 +32,7 @@ gulp.task("templates:compile", function(){
 gulp.task("styles:compile", function() {
     return gulp.src('source/styles/main.scss')
         .pipe(sourcemaps.init())
-        .pipe(scss().on('error', scss.logError))
+        .pipe(scss({outputStyle: 'compressed'}).on('error', scss.logError))
         .pipe(rename('main.min.css'))
         .pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest('build/css'));
@@ -52,24 +52,24 @@ gulp.task('sprite', function (cb) {
 });
 
 // Compile delete files
-gulp.task('clear', function del(cb) {
+gulp.task('clean', function del(cb) {
     return rimraf('build', cb);
 });
 
 // Compile Copy Fonts
-gulp.task('copy-fonts', function() {
+gulp.task('copy:fonts', function() {
     return gulp.src('./source/fonts/**/*.*')
         .pipe(gulp.dest('build/fonts/'));
 });
 
 // Compile Copy Images
-gulp.task('copy-images', function() {
+gulp.task('copy:images', function() {
     return gulp.src('./source/images/**/*.*')
         .pipe(gulp.dest('build/images'));
 });
 
 // Compile Copy Fonts and Images
-gulp.task('copy', gulp.parallel('copy-fonts', 'copy-images'));
+gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
 
 // Watchers
 gulp.task('watch', function() {
@@ -79,7 +79,7 @@ gulp.task('watch', function() {
 
 // Default Task
 gulp.task('default', gulp.series(
-    'clear',
+    'clean',
     gulp.parallel('templates:compile', 'styles:compile', 'sprite', 'copy'),
     gulp.parallel('watch', 'server')
 ));
