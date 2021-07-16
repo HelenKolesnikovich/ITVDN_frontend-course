@@ -1,0 +1,36 @@
+.section-heading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 65px;
+
+  &__title {
+    margin: 0;
+    font-family: $ff-main-bold;
+    font-size: 2.25rem;
+    line-height: 1;
+    text-transform: capitalize;
+    color: $color-dark;
+  }
+
+  &__text {
+    margin: 0;
+    padding-bottom: 5px;
+    font-family: $ff-main-light;
+    font-size: 1.25rem;
+    color: $color-dark;
+  }
+
+  &::after {
+    @include centerer-x();
+    content: "";
+    display: inline-block;
+    bottom: -16px;
+    width: 47px;
+    height: 5px;
+    background-color: $color-dark;
+  }
+}
+

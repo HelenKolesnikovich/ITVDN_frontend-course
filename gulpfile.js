@@ -39,17 +39,18 @@ gulp.task("styles:compile", function() {
 });
 
 // Compile Sprites
-gulp.task('sprite', function (cb) {
+gulp.task('sprite', function(cb) {
     const spriteData = gulp.src('source/images/icons/*.png').pipe(spritesmith({
-      imgName: 'sprite.png',
-      imgPath: '../images/sprite.png',
-      cssName: 'sprite.scss'
+        imgName: 'sprite.png',
+        imgPath: '../images/sprite.png',
+        cssName: 'sprite.scss'
     }));
 
     spriteData.img.pipe(gulp.dest('build/images/'));
-    spriteData.css.pipe(gulp.dest('build/styles/global/'));
+    spriteData.css.pipe(gulp.dest('source/styles/global/'));
     cb();
 });
+  
 
 // Compile delete files
 gulp.task('clean', function del(cb) {

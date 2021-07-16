@@ -1,0 +1,33 @@
+.about {
+    padding: 90px 0 105px;
+    text-align: center;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0 50px;
+    }
+
+    &__item {
+        width: 25%;
+    }
+
+    &__header {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-family: $ff-main-bold;
+        font-size: 1.375rem;
+        text-transform: capitalize;
+        color: $color-dark;
+    }
+
+    &__description {
+        margin: 0;
+        font-family: $ff-main-light;
+        font-size: .875rem;
+        line-height: 1.5;
+        color: $color-text;
+    }
+}
