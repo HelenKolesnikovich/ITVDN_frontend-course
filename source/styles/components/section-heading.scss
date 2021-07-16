@@ -5,6 +5,7 @@
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 65px;
+  color: $color-dark;
 
   &__title {
     margin: 0;
@@ -12,7 +13,6 @@
     font-size: 2.25rem;
     line-height: 1;
     text-transform: capitalize;
-    color: $color-dark;
   }
 
   &__text {
@@ -20,7 +20,6 @@
     padding-bottom: 5px;
     font-family: $ff-main-light;
     font-size: 1.25rem;
-    color: $color-dark;
   }
 
   &::after {

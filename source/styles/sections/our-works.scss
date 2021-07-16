@@ -1,0 +1,13 @@
+.work {
+    padding: 30px 50px;
+    background-color: $color-red;
+    color: $color-white;
+
+    .section-heading {
+        color: $color-white;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+}
