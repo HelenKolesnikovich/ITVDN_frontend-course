@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/HelenKolesnikovich/ITVDN_frontend-course#readme",
   "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize.scss": "^0.1.0",
     "touch": "^3.1.0"
   },
   "devDependencies": {

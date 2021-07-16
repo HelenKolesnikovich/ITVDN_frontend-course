@@ -1,4 +1,16 @@
-body {
-    background-color: aqua;
-    color: white;
-}
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/normalize.scss/normalize";
+
+@import "./global/fonts.scss";
+@import "./global/vars.scss";
+@import "./global/mixins.scss";
+@import "./global/sprite.scss";
+@import "./global/base.scss";
+@import "./global/common.scss";
+
+@import "./components/button.scss";
+@import "./components/navigation.scss";
+@import "./components/contacts.scss";
+
+
+@import "./sections/header.scss";

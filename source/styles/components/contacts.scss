@@ -1,18 +1,3 @@
-.header {
-  &__top {
-      background-color: $gray--light;
-      border-bottom: 1px solid $gray;
-  }
-
-  &__bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 41px 0 32px;
-  }
-}
-
 .contacts {
   text-align: right;
 }

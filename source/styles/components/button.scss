@@ -1,0 +1,28 @@
+.btn {
+  display: inline-block;
+  padding: 10px 22px 7px;
+  border-radius: $br-px;
+  color: $color-white;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition-duration: $speed-transition;
+
+  &--red {
+    background-color: $color-red;
+
+    &:hover {
+      background-color: lighten($color-red, $rate-lighten);
+    }
+  }
+
+  &--yellow {
+    background-color: $color-yellow;
+
+    &:hover {
+      background-color: lighten($color-yellow, $rate-lighten);
+    }
+  }
+}
+
+
+

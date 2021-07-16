@@ -1,0 +1,7 @@
+nav.nav 
+  - var links  = ['home', 'about us', 'our approch', 'our work']
+    each link, index in links 
+      if index == 0
+        a.nav__link.nav__link--active(href="#")= link
+      else 
+        a.nav__link(href="#")= link

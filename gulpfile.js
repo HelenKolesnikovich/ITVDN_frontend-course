@@ -20,7 +20,7 @@ gulp.task('server', function() {
 });
 
 //Compile HTML
-gulp.task("templates-compile", function(){
+gulp.task("templates:compile", function(){
     return gulp.src("source/template/index.pug")
         .pipe(pug({
             pretty: true
@@ -28,8 +28,8 @@ gulp.task("templates-compile", function(){
         .pipe(gulp.dest('build'));
 });
 
-// Compile CSS
-gulp.task("scss", function() {
+// Compile CSS scss
+gulp.task("styles:compile", function() {
     return gulp.src('source/styles/main.scss')
         .pipe(sourcemaps.init())
         .pipe(scss().on('error', scss.logError))
@@ -73,13 +73,13 @@ gulp.task('copy', gulp.parallel('copy-fonts', 'copy-images'));
 
 // Watchers
 gulp.task('watch', function() {
-    gulp.watch('source/template/**/*.pug', gulp.series('templates-compile'));
-    gulp.watch('source/styles/**/*.scss', gulp.series('scss'));
+    gulp.watch('source/template/**/*.pug', gulp.series('templates:compile'));
+    gulp.watch('source/styles/**/*.scss', gulp.series('styles:compile'));
 });
 
 // Default Task
 gulp.task('default', gulp.series(
     'clear',
-    gulp.parallel('templates-compile', 'scss', 'sprite', 'copy'),
+    gulp.parallel('templates:compile', 'styles:compile', 'sprite', 'copy'),
     gulp.parallel('watch', 'server')
 ));

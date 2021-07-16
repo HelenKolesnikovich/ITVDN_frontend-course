@@ -1,0 +1,25 @@
+// all styles for tags
+body {
+  font-family: $ff-main;
+  font-size: 1rem;
+  line-height: 1.2;   
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
