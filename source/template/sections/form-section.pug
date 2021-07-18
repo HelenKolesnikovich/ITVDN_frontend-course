@@ -7,13 +7,13 @@ section.form-section
     .btn__circle
       a.btn__arrow-down: i.fa.fa-angle-down
     
-    .form-container 
-      form(method="post" action="#").form
-        button(type="button").btn__circle.form__close-btn X 
-        p.form__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis qui consectetur non iusto modi odit quasi numquam, incidunt eos cumque!
-        .form__inputs 
-          input.form__input(type="text" placeholder="your name")
-          input.form__input(type="text" placeholder="contact number")
-          input.form__input(type="text" placeholder="contact name")
-        button.btn.btn--red(type="submit") submit now
+    .form-section__container 
+      form(method="post" action="#").form-section__form.form
+        button(type="button").btn__circle.form-section__close-btn X 
+        p.form-section__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis qui consectetur non iusto modi odit quasi numquam, incidunt eos cumque!
+        .form-section__inputs.form__inputs
+          input.form-section__input.form__input(type="text" placeholder="your name")
+          input.form-section__input.form__input(type="text" placeholder="contact number")
+          input.form-section__input.form__input(type="text" placeholder="contact name")
+        button.form-section__button.btn--red.form__button(type="submit") submit now
 

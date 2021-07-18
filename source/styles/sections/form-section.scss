@@ -15,89 +15,41 @@
     margin-bottom: 3rem;
   }
 
-  .form {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  &__form {
     width: 60%;
     min-width: 700px;
     margin: 0 auto;
     padding: 2rem 4rem 5rem;
     border-radius: $br-px;
     background-color: $color-white;
-    font-family: $ff-main-light;
-    font-size: 1.2rem;
-    color: lighten($color-text, 20%);
+  }
 
-    &__close-btn {
-      position: absolute;
-      top: -20px;
-      right: -20px;
-      border: 2px solid $color-white;
-      background-color: $color-red;
-      color: $color-white;
-      font-size: 1.6rem;
-      cursor: pointer;
-      transition-property: background-color, color, border-color;
-      transition-duration: .3s;
+  &__close-btn {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    border: 2px solid $color-white;
+    background-color: $color-red;
+    color: $color-white;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition-property: background-color, color, border-color;
+    transition-duration: .3s;
 
-      &:hover,
-      &:focus {
-        border-color: darken($color-white, 15%);
-        background-color: lighten($color-red, 10%);
-        color: darken($color-white, 15%);
-      }
-    }
-
-
-    &__text {
-      margin: 2rem 0;
-      text-align: center;
-    }
-
-    &__inputs {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 80%;
-    }
-
-    &__input {
-      display: block;
-      width: 100%;
-      margin-bottom: 10px;
-      padding: 1rem;
-      border-radius: $br-px;
-      border: 1px solid $bg--gray;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      &::placeholder {
-        color: lighten($color-text, 20%);
-        text-transform: capitalize;
-      }
-
-      &:hover,
-      &:focus {
-        outline: none;
-        border: 1px solid $color-blue;
-        box-shadow: 0 0 8px 1px rgba(0,0,0,.5);
-      }
+    &:hover,
+    &:focus {
+      border-color: darken($color-white, 15%);
+      background-color: lighten($color-red, 10%);
+      color: darken($color-white, 15%);
     }
   }
 
-  .btn {
-    margin-top: 3rem;
-    padding: 1.5rem 4rem;
-    border: none;
-    font-family: $ff-main;
-    letter-spacing: 2;
-    line-height: 1;
-    text-transform: uppercase;
+  &__text {
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  &__inputs {
+    width: 80%;
   }
 }
